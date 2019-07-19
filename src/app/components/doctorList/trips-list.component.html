@@ -1,9 +1,38 @@
 <div class="card">
   <div class="card-header">
-   <h3>Doctor list</h3>
+    <h3>Doctor list</h3>
   </div>
   <div class="card-body">
-    <table class="table">
+
+    <div class="row">
+      <div class="card align-items-center" style="width:400px; margin: 5px"
+        *ngFor='let item of data'>
+        <img class="card-img-top center"
+          [src]='item.picture'
+          [title]='item.firstName'
+          [style.width.px]='"100"'
+
+          [style.margin.px]='"5"'>
+        <div class="card-body text-center">
+          <h4 class="card-title">{{ item.lastName }}</h4>
+
+          <h2 class="card-text">{{ item.phoneNumber}}</h2>
+          <a class="btn btn-primary"> Show Details </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <table class="table">
       <thead>
 
   <tr>
@@ -18,14 +47,14 @@
           <td>{{item.lastName}}</td>
           <td>{{item.firstName}}</td>
           <!-- <td> <ngb-datepicker></ngb-datepicker></td> -->
-        </tr>
+    <!-- </tr>
         <tr>
           <td scope="row"></td>
           <td></td>
           <td></td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
 
   </div>
   <div class="card-footer text-muted">
