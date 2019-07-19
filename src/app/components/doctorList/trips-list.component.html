@@ -14,10 +14,10 @@
 
           [style.margin.px]='"5"'>
         <div class="card-body text-center">
-          <h4 class="card-title">{{ item.lastName }}</h4>
+          <h4 class="card-title">{{ item.lastName}}</h4>
 
           <h2 class="card-text">{{ item.phoneNumber}}</h2>
-          <a class="btn btn-primary"> Show Details </a>
+          <a class="btn btn-primary" [routerLink]="['/details',item.id]" routerLinkActive="router-link-active" > Show Details </a>
         </div>
       </div>
     </div>

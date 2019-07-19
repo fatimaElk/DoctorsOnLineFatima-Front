@@ -10,6 +10,7 @@ import { TripsListComponent } from './components/doctorList/trips-list.component
 import { HttpClientModule } from '@angular/common/http';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { DoctorDetailsComponent } from './components/doctor-details/doctor-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     FooterComponent,
     TripsListComponent,
     WelcomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DoctorDetailsComponent
   ],
   imports: [
     BrowserModule,
