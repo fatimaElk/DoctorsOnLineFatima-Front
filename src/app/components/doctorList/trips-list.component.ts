@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripsListComponent implements OnInit {
   data: Doctor[];
-
+  // tslint:disable-next-line: no-inferrable-types
+  width: number = 50;
+  height: number = 50;
   constructor(private service: DoctorsService) { }
 
   ngOnInit() {
