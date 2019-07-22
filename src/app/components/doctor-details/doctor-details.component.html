@@ -1,1 +1,30 @@
-<p>DETAIL DOCTEUR.....</p>
+<div class="card offset-1 col-md-10">
+  <div class="card-header bg-info text-white">
+    <h2>Details for {{ doctor?.lastName}} </h2>
+  </div>
+  <div class="card-body">
+    <div class='row'>
+      <div class='col-md-6'>
+        <div class='row'>
+          <div class='col-md-3'>Name:</div>
+          <div class='col-md-6'>{{doctor?.firstName}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3'>Tel:</div>
+          <div class='col-md-6'>{{doctor?.phoneNumber}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3'>Email:</div>
+          <div class='col-md-6'>{{doctor?.email}}</div>
+        </div>
+      </div>
+      <div class='col-md-6 align-items-center'> <img class='center img-responsive' [style.width.px]='150'
+         [style.margin.px]='2' [src]='doctor?.picture' [title]='doctor?.firstName' /> </div>
+    </div>
+    <div class="row">
+      <div class='card col-md-10'> <a name="" id="" class="btn btn-primary" (click)= "addToCart()"   role="button">Take an appointment</a> </div>
+    </div>
+  </div>
+  <!-- <div class="card-footer text-muted"> <a class='btn btn-lg' (click)='onBack()' style='width:100px'> <i
+        class="fa fa-angle-double-left"></i> </a> </div> -->
+</div>

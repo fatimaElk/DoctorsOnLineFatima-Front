@@ -5,19 +5,14 @@
   <div class="card-body">
 
     <div class="row">
-      <div class="card align-items-center" style="width:400px; margin: 5px"
-        *ngFor='let item of data'>
-        <img class="card-img-top center"
-          [src]='item.picture'
-          [title]='item.firstName'
-          [style.width.px]='"100"'
-
+      <div class="card align-items-center" style="width:400px; margin: 5px" *ngFor='let item of data'>
+        <img class="card-img-top center" [src]='item.picture' [title]='item.firstName' [style.width.px]='"100"'
           [style.margin.px]='"5"'>
         <div class="card-body text-center">
           <h4 class="card-title">{{ item.lastName}}</h4>
-
           <h2 class="card-text">{{ item.phoneNumber}}</h2>
-          <a class="btn btn-primary" [routerLink]="['/details',item.id]" routerLinkActive="router-link-active" > Show Details </a>
+          <a class="btn btn-primary" [routerLink]="['/details',item.id]" routerLinkActive="router-link-active"> Show
+            Details </a>
         </div>
       </div>
     </div>
